@@ -37,7 +37,7 @@ const OurProductsSection = () => {
             </CardContent>
             <CardFooter>
               <Link
-                className="text-primary text-sm md:text-base flex items-center font-medium"
+                className="text-primary hover:text-primary/80 text-sm md:text-base flex items-center font-medium"
                 href={"/product/#dorang-special"}
               >
                 Learn More
@@ -67,7 +67,7 @@ const OurProductsSection = () => {
             </CardContent>
             <CardFooter>
               <Link
-                className="text-primary text-sm md:text-base flex items-center font-medium"
+                className="text-primary hover:text-primary/80 text-sm md:text-base flex items-center font-medium"
                 href={"/product/#dorangmas"}
               >
                 Learn More

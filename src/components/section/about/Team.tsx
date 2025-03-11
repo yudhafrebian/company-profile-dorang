@@ -53,7 +53,7 @@ const TeamSection = () => {
           Meet Our Team
         </h2>
         <p className="md:w-1/2 text-sm md:text-base text-center mb-8">
-          The people behind PT. Ikan Dorang's success.
+        The people behind PT. Ikan Dorang&apos;s success.
         </p>
 
         {loading ? (

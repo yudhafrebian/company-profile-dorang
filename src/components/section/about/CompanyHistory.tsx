@@ -60,7 +60,7 @@ const CompanyHistorySection = () => {
             Company History
           </h1>
           <p className="md:w-1/2 text-sm md:text-base text-center">
-            Let's explore the journey of PT. Ikan Dorang through time.
+          Let&apos;s explore the journey of PT. Ikan Dorang through time.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-0 mt-8 md:mt-16">

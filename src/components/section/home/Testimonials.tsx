@@ -6,7 +6,9 @@ const TestimonySection = () => {
     <section className="p-5 md:p-20 bg-[#F9FAFB]">
       <div>
         <div className="flex flex-col items-center gap-3 mb-8 md:mb-16">
-          <h2 className="text-xl md:text-3xl font-extrabold">What Our Customers Say</h2>
+          <h2 className="text-xl md:text-3xl font-extrabold">
+            What Our Customers Say
+          </h2>
           <p className="md:w-1/2 text-sm md:text-base text-center text-slate-600">
             Hear from businesses and households that trust PT. Ikan Dorang for
             premium cooking oil.
@@ -21,15 +23,17 @@ const TestimonySection = () => {
                 </Avatar>
                 <div>
                   <h5 className="font-bold">Sarah Johnson</h5>
-                  <p className="text-sm md:text-base text-slate-600">Owner, Jhonson's Restaurant</p>
+                  <p className="text-sm md:text-base text-slate-600">
+                    Owner, Jhonson&rsquo;s Restaurant
+                  </p>
                 </div>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-xs md:text-base text-slate-600">
-                "Ikan Dorang’s coconut oil has elevated the quality of our
+              &ldquo;Ikan Dorang&rsquo;s coconut oil has elevated the quality of our
                 dishes. It stays clear, lasts longer, and brings out the best
-                flavors! So happy to using this product."
+                flavors! So happy to using this product.&ldquo;
               </p>
             </CardContent>
           </Card>
@@ -49,9 +53,9 @@ const TestimonySection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-xs md:text-base text-slate-600">
-                "We rely on Ikan Dorang Mas for consistent quality and
+              &ldquo;We rely on Ikan Dorang Mas for consistent quality and
                 reliability. Their palm oil meets industry standards and keeps
-                our customers satisfied."
+                our customers satisfied.&ldquo;
               </p>
             </CardContent>
           </Card>

@@ -2,9 +2,7 @@ import Image from "next/image";
 import * as React from "react";
 import { Card, CardContent, CardHeader } from "../../ui/card";
 
-interface IAboutUsProps {}
-
-const AboutUs: React.FunctionComponent<IAboutUsProps> = (props) => {
+const AboutUs = () => {
   return (
     <section className="p-5 md:p-20 bg-[#F9FAFB]">
       <div className="px-6">

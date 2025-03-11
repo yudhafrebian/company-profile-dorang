@@ -23,9 +23,9 @@ import { toast } from "sonner";
 const ContactUsSection = () => {
   const [subject, setSubject] = useState("");
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     formData.append("subject", subject);
 
     fetch("https://formspree.io/f/xkgjwajj", {
@@ -34,11 +34,10 @@ const ContactUsSection = () => {
       headers: { Accept: "application/json" },
     })
       .then((response) => response.json())
-      .then((data) => {
+      .then(() => {
         toast.success("Form submitted successfully!");
-        e.target.reset();
       })
-      .catch((error) => {
+      .catch(() => {
         alert("Error submitting form.");
       });
   };
@@ -51,7 +50,7 @@ const ContactUsSection = () => {
             Ready to Partner with Us?
           </h2>
           <p className="text-sm md:text-base text-white text-center mb-8">
-            Get premium coconut and palm cooking oil for your business. Let's
+            Get premium coconut and palm cooking oil for your business. Let&apos;s
             discuss your needs!
           </p>
           <div className="flex justify-center">
