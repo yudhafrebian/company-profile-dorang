@@ -49,12 +49,14 @@ const TeamSection = () => {
   return (
     <section className="p-5 md:p-20 bg-[#F9FAFB]">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-xl md:text-3xl font-extrabold mb-3 md:mb-6">
-          Meet Our Team
-        </h2>
-        <p className="md:w-1/2 text-sm md:text-base text-center mb-8">
-        The people behind PT. Ikan Dorang&apos;s success.
-        </p>
+        <div className="flex flex-col items-center gap-4">
+          <h2 className="text-xl md:text-3xl font-extrabold mb-3 md:mb-6">
+            Meet Our Team
+          </h2>
+          <p className="md:w-1/2 text-sm md:text-base text-center mb-8">
+            The people behind PT. Ikan Dorang&apos;s success.
+          </p>
+        </div>
 
         {loading ? (
           <p className="text-gray-500">Loading team members...</p>
@@ -64,7 +66,9 @@ const TeamSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {team.map((member, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="md:text-lg font-semibold mb-3">{roles[index]}</h3>
+                <h3 className="md:text-lg font-semibold mb-3">
+                  {roles[index]}
+                </h3>
                 <Image
                   src={member.picture.large}
                   alt={`${member.name.first} ${member.name.last} - ${roles[index]}`}
@@ -96,4 +100,3 @@ const TeamSection = () => {
 };
 
 export default TeamSection;
-
